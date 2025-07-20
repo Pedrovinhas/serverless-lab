@@ -20,3 +20,10 @@ export function badRequest(body?: Record<string, any>): HttpResponse {
     body,
   };
 }
+
+export function unprocessableEntity(body?: Record<string, any>): HttpResponse {
+  return {
+    statusCode: 422,
+    body,
+  };
+}
