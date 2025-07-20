@@ -27,3 +27,10 @@ export function unprocessableEntity(body?: Record<string, any>): HttpResponse {
     body,
   };
 }
+
+export function unauthorized(body?: Record<string, any>): HttpResponse {
+  return {
+    statusCode: 401,
+    body,
+  };
+}
