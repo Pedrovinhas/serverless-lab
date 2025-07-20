@@ -1,7 +1,26 @@
 {
+  "name": "serverless-lab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sls offline start --reloadHandler"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pedrovinhas/serverless-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pedrovinhas/serverless-lab/issues"
+  },
+  "homepage": "https://github.com/Pedrovinhas/serverless-lab#readme",
+  "description": "",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.152",
     "@types/node": "^24.0.15",
+    "serverless-offline": "^14.4.0",
     "typescript": "^5.8.3"
   }
 }
