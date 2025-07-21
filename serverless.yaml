@@ -21,6 +21,9 @@ provider:
           Action:
             - s3:PutObject
           Resource: !Sub '${UploadsBucket.Arn}/*'
+        - Effect: Allow
+          Action: sqs:SendMessage
+          Resource: !GetAtt ServerlessLabQueue.Arn
 
 package:
   individually: true
